@@ -72,3 +72,8 @@ footer {
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.breed-group {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}

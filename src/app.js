@@ -21,14 +21,43 @@ searchBtn.addEventListener('click', () => {
       .then(response => response.json())
       .then(data => {
         if (data.length > 0) {
-            const breedInfoHtml = `
-            <div class="card">
-              <h2>${data[0].name}</h2>
-              <p>${data[0].description}</p>
-              <img src="${data[0].image.url}" alt="${data[0].name}">
-            </div>
-          `;
+          const breedInfoHtml = `
+  <div class="card">
+    <h2>${data[0].name}</h2>
+    <p class="breed-group">${data[0].breed_group}</p>
+    <p>${data[0].description}</p>
+    <img src="${data[0].image.url}" alt="${data[0].name}">
+  </div>
+`;
+
           resultsContainer.innerHTML = breedInfoHtml;
+
+          data.forEach(breed => {
+            const resultElement = document.createElement('div');
+            resultElement.classList.add('result');
+            resultElement.textContent = breed.name;
+
+            resultElement.addEventListener('click', () => {
+              fetch(`https://dog.ceo/api/breed/${breed.name}/images/random`)
+                .then(response => response.json())
+                .then(data => {
+                  if (data.message) {
+                    const descriptionElement = document.createElement('p');
+                    descriptionElement.textContent = data.message;
+
+                    const descriptionContainer = document.querySelector('#descriptions');
+                    descriptionContainer.appendChild(descriptionElement);
+                  } else {
+                    console.error('No message property found in data object');
+                  }
+                })
+                .catch(error => {
+                  console.error(error);
+                });
+            });
+
+            resultsContainer.appendChild(resultElement);
+          });
         } else {
           resultsContainer.innerHTML = '<p>No breed found.</p>';
         }
