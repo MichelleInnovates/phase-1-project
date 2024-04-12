@@ -33,3 +33,6 @@ header {
     font-size: 20px; /* Reduce the font size of the paragraph */
     margin: 20%;
   }
+  .bg-body-tertiary {
+    background-color: #a52a2a !important;
+  }
