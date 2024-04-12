@@ -1,99 +1,93 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/style.css">
-    <title>FurryFriendsFinder</title>
-    <style>
-      .bg-body-tertiary {
-          background-color: #a52a2a !important;
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/style.css">
+  <title>FurryFriendsFinder</title>
+
+  <style>
+    .bg-body-tertiary {
+      background-color: bg-body-tertiary !important;
+    }
   </style>
+
 </head>
+
 <body>
-   
-    <section>
+  <section>
     <header class="bg-primary text-white p-3">
-        <div class="container">
-            <h1 class="display-4">FurryFriendsFinder</h1>
-            <p class="lead">Find your perfect furry friend to adopt!</p>
-        </div>
-    </header>
-    
+      <div class="container">
+        <h1 class="display-4">FurryFriendsFinder</h1>
+        <p class="lead">Find your perfect furry friend to adopt!</p>
+      </div>
+      <form class="d-flex">
+        <input type="text" id="breed-search" class="form-control me-2" placeholder="Search for a breed" aria-label="Search">
+        <button class="btn btn-outline-success" type="button" id="search-btn">Search</button>
+    </form>
+          </header>
+
     <main class="container my-5">
-       
-        </section>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="navbar-brand" href="/">Navbar</a>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                      </li>
-                  </ul>
-                  <div class="d-flex align-items-center">
-                      <form class="d-flex">
-                          <input type="text" id="breed-search" class="form-control me-2" placeholder="Search for a breed" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                          <div id="breed-info"></div>
-                      </form>
-                      <p class="mx-2" style="text-align: center; padding-bottom: 0px; font-size: 30px; background-color: #a52a2a;">Any particular breed in mind?</p>
-                  </div>
-              </div>
-          </div>
-      </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-        <img src= https://i.pinimg.com/564x/81/d5/ad/81d5ad53bec0e37b506234a13993a61b.jpg  class="img-fluid" width=100% alt="Picture of dog">
+
+
+
+
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img src=https://i.pinimg.com/564x/81/d5/ad/81d5ad53bec0e37b506234a13993a61b.jpg class="img-fluid" width=100%
+          alt="Picture of dog">
+      </div>
     </div>
-</div>
-</div>
+  </div>
 
 
-<div class="container">
+  <div class="container">
     <div class="row">
-        <div class="col-12">
-<img src= https://i.pinimg.com/564x/58/fd/a9/58fda9d69decdf0f3e9fd2ce384a29c2.jpg class="img-fluid" width="100%" alt="Picture of dog">
-</div>
-</div>
-</div>
-<div class="container">
+      <div class="col-12 mt-5">
+        <img src=https://i.pinimg.com/564x/58/fd/a9/58fda9d69decdf0f3e9fd2ce384a29c2.jpg class="img-fluid" width="100%"
+          alt="Picture of dog">
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="row">
-        <div class="col-12">
-<img src= https://i.pinimg.com/564x/50/88/a3/5088a37175fee3aa67c3f1b5d6787af5.jpg class="img-fluid" width="100%" alt="Picture of dog">
-</div>
-</div>
-</div>
-        <section id="results-container"></section>
-    </main>
-    <p>Who let the dogs out?We did and now they need homes.Dogs have been cherished companions to humans for thousands of years, providing unconditional love, loyalty, and companionship. They have a unique ability to sense our emotions and respond with empathy, making them the perfect partners for people of all ages and backgrounds.
+      <div class="col-12 mt-5 mb-3">
+        <img src=https://i.pinimg.com/564x/50/88/a3/5088a37175fee3aa67c3f1b5d6787af5.jpg class="img-fluid" width="100%"
+          alt="Picture of dog">
+      </div>
+    </div>
+  </div>
+  <section id="results-container"></section>
+  </main>
+  <p>Who let the dogs out?We did and now they need homes.Dogs have been cherished companions to humans for thousands of
+    years, providing unconditional love, loyalty, and companionship. They have a unique ability to sense our emotions
+    and respond with empathy, making them the perfect partners for people of all ages and backgrounds.
 
-        A dog's loyalty is unmatched, as they will stick by their owner's side through thick and thin. They are always eager to please and will go to great lengths to make their owners happy. Whether it's a simple game of fetch or a long walk in the park, dogs are always up for an adventure.
-        
-        Dogs are also known for their intelligence and problem-solving skills. They can be trained to perform a variety of tasks, from guiding the blind to detecting medical conditions. This intelligence, combined with their natural instinct to protect their family, makes dogs excellent watchdogs and guardians.
-        
-        But perhaps the most endearing quality of dogs is their capacity for love. They are always happy to see their owners, wagging their tails and showering them with kisses. A dog's love is pure and uncomplicated, and it can bring joy and comfort to even the most troubled souls.
-        
-        In short, dogs are more than just pets. They are family members, friends, and confidants. They bring out the best in us and remind us of the importance of love, loyalty, and companionship. So if you're looking for a furry friend to brighten up your life, consider adopting a dog. You won't regret it!
-        
-    </p>
-    <footer class="bg-warning text-white p-3">
-        
-        <script src="src/app.js"></script>
-    </body>
-    </html>
-        
+    A dog's loyalty is unmatched, as they will stick by their owner's side through thick and thin. They are always eager
+    to please and will go to great lengths to make their owners happy. Whether it's a simple game of fetch or a long
+    walk in the park, dogs are always up for an adventure.
+
+    Dogs are also known for their intelligence and problem-solving skills. They can be trained to perform a variety of
+    tasks, from guiding the blind to detecting medical conditions. This intelligence, combined with their natural
+    instinct to protect their family, makes dogs excellent watchdogs and guardians.
+
+    But perhaps the most endearing quality of dogs is their capacity for love. They are always happy to see their
+    owners, wagging their tails and showering them with kisses. A dog's love is pure and uncomplicated, and it can bring
+    joy and comfort to even the most troubled souls.
+
+    In short, dogs are more than just pets. They are family members, friends, and confidants. They bring out the best in
+    us and remind us of the importance of love, loyalty, and companionship. So if you're looking for a furry friend to
+    brighten up your life, consider adopting a dog. You won't regret it!
+
+  </p>
+  <footer class="bg-warning text-white p-3">
+      <h5>Copyright, 2023</h5>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
