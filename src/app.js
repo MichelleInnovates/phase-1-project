@@ -21,10 +21,12 @@ searchBtn.addEventListener('click', () => {
       .then(response => response.json())
       .then(data => {
         if (data.length > 0) {
-          const breedInfoHtml = `
-            <h2>${data[0].name}</h2>
-            <p>${data[0].description}</p>
-            <img src="${data[0].image.url}" alt="${data[0].name}">
+            const breedInfoHtml = `
+            <div class="card">
+              <h2>${data[0].name}</h2>
+              <p>${data[0].description}</p>
+              <img src="${data[0].image.url}" alt="${data[0].name}">
+            </div>
           `;
           resultsContainer.innerHTML = breedInfoHtml;
         } else {
