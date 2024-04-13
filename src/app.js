@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Display the matching breeds
         displayBreeds(matchingBreeds);
+
+        // Scroll to the search results
+        breedsContainer.scrollIntoView({ behavior: 'smooth' });
       })
       .catch(error => {
         console.error('Error fetching breeds:', error);
