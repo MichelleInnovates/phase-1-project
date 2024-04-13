@@ -1,0 +1,67 @@
+{
+    "breeds": [
+        {
+            "name": "Affenpinscher",
+            "breed_group": "Toy",
+            "description": "The Affenpinscher is a small breed of dog that originated in Germany. They are known for their monkey-like facial expressions and playful personalities.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Affenpinscher_%28PSF%29.png/1200px-Affenpinscher_%28PSF%29.png"
+            },
+            "dog-shelter": "Paws of love"
+        },
+        {
+            "name": "Afghan Hound",
+            "breed_group": "Hound",
+            "description": "The Afghan Hound is a large breed of dog that originated in Afghanistan. They are known for their long, silky coats and independent personalities.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Afghan_Hound_%28PSF%29.png/1200px-Afghan_Hound_%28PSF%29.png"
+            },
+            "dog-shelter": "Dog nation"
+        },
+        {
+            "name": "Airedale Terrier",
+            "breed_group": "Terrier",
+            "description": "The Airedale Terrier is the largest of the terriers, and is known for its intelligence and versatility.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Airedale_Terrier_%28PSF%29.png/1200px-Airedale_Terrier_%28PSF%29.png"
+            },
+            "dog-shelter": "Paws of love"
+        },
+        {
+            "name": "American Staffordshire Terrier",
+            "breed_group": "Terrier",
+            "description": "The American Staffordshire Terrier is a breed of dog that originated in the United States. They are known for their muscular build and loyal personalities.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/American_Staffordshire_Terrier_%28PSF%29.png/1200px-American_Staffordshire_Terrier_%28PSF%29.png"
+            },
+            "dog-shelter": "Dog nation"
+        },
+        {
+            "name": "Basenji",
+            "breed_group": "Hound",
+            "description": "The Basenji is a breed of hunting dog that originated in Africa. They are known for their unique bark and independent personalities.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Basenji_%28PSF%29.png/1200px-Basenji_%28PSF%29.png"
+            },
+            "dog-shelter": "Paws of love"
+        },
+        {
+            "name": "Basset Hound",
+            "breed_group": "Hound",
+            "description": "The Basset Hound is a breed of dog that originated in France. They are known for their long ears and short legs, and are often used for hunting small game.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Basset_Hound_%28PSF%29.png/1200px-Basset_Hound_%28PSF%29.png"
+            },
+            "dog-shelter": "Dog nation"
+        },
+        {
+            "name": "Beagle",
+            "breed_group": "Hound",
+            "description": "The Beagle is a breed of small hound that originated in England. They are known for their intelligence and loyalty.",
+            "image": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Beagle_%28PSF%29.png/1200px-Beagle_%28PSF%29.png"
+            },
+            "dog-shelter": "Paws of love"
+        }
+    ]
+}
