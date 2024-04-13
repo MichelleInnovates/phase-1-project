@@ -1,70 +1,69 @@
-const searchBtn = document.querySelector('#search-btn');
-const resultsContainer = document.querySelector('#results-container');
-
-searchBtn.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
+  const searchBtn = document.querySelector('#search-btn');
   const breedSearch = document.querySelector('#breed-search');
-  const breed = breedSearch.value;
+  const breedsContainer = document.querySelector('#breeds-container');
 
-  if (breed) {
-    const headers = new Headers({
-      "Content-Type": "application/json",
-      "x-api-key": "live_yDuKuQv4oaHAtyvyeQALwyOZ4BwqtrglXeJXqzvCkm0k9LF5lroqFSUPij4CokrL"
-    });
+  searchBtn.addEventListener('click', () => {
+    const breedName = breedSearch.value.toLowerCase();
 
-    var requestOptions = {
-      method: 'GET',
-      headers: headers,
-      redirect: 'follow'
-    };
-
-    fetch(`https://api.thedogapi.com/v1/breeds/search?q=${breed}`, requestOptions)
+    // Fetch the breeds data from the db.json file
+    fetch('src/db.json')
       .then(response => response.json())
       .then(data => {
-        if (data.length > 0) {
-          const breedInfoHtml = `
-  <div class="card">
-    <h2>${data[0].name}</h2>
-    <p class="breed-group">${data[0].breed_group}</p>
-    <p>${data[0].description}</p>
-    <img src="${data[0].image.url}" alt="${data[0].name}">
-  </div>
-`;
+        // Filter the breeds based on the search query
+        const matchingBreeds = data.breeds.filter(breed => breed.name.toLowerCase().includes(breedName));
 
-          resultsContainer.innerHTML = breedInfoHtml;
+        // Display the matching breeds
+        displayBreeds(matchingBreeds);
 
-          data.forEach(breed => {
-            const resultElement = document.createElement('div');
-            resultElement.classList.add('result');
-            resultElement.textContent = breed.name;
-
-            resultElement.addEventListener('click', () => {
-              fetch(`https://dog.ceo/api/breed/${breed.name}/images/random`)
-                .then(response => response.json())
-                .then(data => {
-                  if (data.message) {
-                    const descriptionElement = document.createElement('p');
-                    descriptionElement.textContent = data.message;
-
-                    const descriptionContainer = document.querySelector('#descriptions');
-                    descriptionContainer.appendChild(descriptionElement);
-                  } else {
-                    console.error('No message property found in data object');
-                  }
-                })
-                .catch(error => {
-                  console.error(error);
-                });
-            });
-
-            resultsContainer.appendChild(resultElement);
-          });
-        } else {
-          resultsContainer.innerHTML = '<p>No breed found.</p>';
-        }
+        // Scroll to the search results
+        breedsContainer.scrollIntoView({ behavior: 'smooth' });
       })
       .catch(error => {
-        console.error(error);
-        resultsContainer.innerHTML = '<p>An error occurred.</p>';
+        console.error('Error fetching breeds:', error);
       });
+  });
+
+  function displayBreeds(breeds) {
+    breedsContainer.innerHTML = '';
+
+    if (breeds.length === 0) {
+      breedsContainer.innerHTML = '<p>No matching breeds found.</p>';
+      return;
+    }
+
+    breeds.forEach(breed => {
+      const breedElement = document.createElement('div');
+      breedElement.classList.add('card', 'mb-3');
+
+      const breedImage = document.createElement('img');
+      breedImage.classList.add('card-img-top');
+      breedImage.src = breed.image.url;
+      breedImage.alt = breed.name;
+
+      const breedBody = document.createElement('div');
+      breedBody.classList.add('card-body');
+
+      const breedNameElement = document.createElement('h5');
+      breedNameElement.classList.add('card-title');
+      breedNameElement.textContent = breed.name;
+
+      const breedGroupElement = document.createElement('p');
+      breedGroupElement.classList.add('card-text');
+      breedGroupElement.textContent = `Breed Group: ${breed.breed_group}`;
+
+      const breedDescriptionElement = document.createElement('p');
+      breedDescriptionElement.classList.add('card-text');
+      breedDescriptionElement.textContent = breed.description;
+
+      breedBody.appendChild(breedNameElement);
+      breedBody.appendChild(breedGroupElement);
+      breedBody.appendChild(breedDescriptionElement);
+
+      breedElement.appendChild(breedImage);
+      breedElement.appendChild(breedBody);
+
+      breedsContainer.appendChild(breedElement);
+    });
   }
 });
