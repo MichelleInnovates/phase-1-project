@@ -5,63 +5,56 @@
             "breed_group": "Toy",
             "description": "The Affenpinscher is a small breed of dog that originated in Germany. They are known for their monkey-like facial expressions and playful personalities.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Affenpinscher_%28PSF%29.png/1200px-Affenpinscher_%28PSF%29.png"
-            },
-            "dog-shelter": "Paws of love"
+                "url": "https://i.pinimg.com/564x/66/cb/08/66cb08e0823b0394d2ee11d290dc8374.jpg"
+            }
         },
         {
             "name": "Afghan Hound",
             "breed_group": "Hound",
             "description": "The Afghan Hound is a large breed of dog that originated in Afghanistan. They are known for their long, silky coats and independent personalities.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Afghan_Hound_%28PSF%29.png/1200px-Afghan_Hound_%28PSF%29.png"
-            },
-            "dog-shelter": "Dog nation"
+                "url": "https://i.pinimg.com/564x/56/5c/3f/565c3f9688496333509396f6bd82b705.jpg"
+            }
         },
         {
             "name": "Airedale Terrier",
             "breed_group": "Terrier",
             "description": "The Airedale Terrier is the largest of the terriers, and is known for its intelligence and versatility.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Airedale_Terrier_%28PSF%29.png/1200px-Airedale_Terrier_%28PSF%29.png"
-            },
-            "dog-shelter": "Paws of love"
+                "url": "https://i.pinimg.com/564x/2c/20/5d/2c205d8dc7c82391f92ba9c72a6282f0.jpg"
+            }
         },
         {
             "name": "American Staffordshire Terrier",
             "breed_group": "Terrier",
             "description": "The American Staffordshire Terrier is a breed of dog that originated in the United States. They are known for their muscular build and loyal personalities.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/American_Staffordshire_Terrier_%28PSF%29.png/1200px-American_Staffordshire_Terrier_%28PSF%29.png"
-            },
-            "dog-shelter": "Dog nation"
+                "url": "https://i.pinimg.com/564x/24/35/11/243511030bf3c8f5a6a593dbb5b303f5.jpg"
+            }
         },
         {
             "name": "Basenji",
             "breed_group": "Hound",
             "description": "The Basenji is a breed of hunting dog that originated in Africa. They are known for their unique bark and independent personalities.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Basenji_%28PSF%29.png/1200px-Basenji_%28PSF%29.png"
-            },
-            "dog-shelter": "Paws of love"
+                "url": "https://i.pinimg.com/564x/fc/69/a3/fc69a3cf48c179518048bd13f3f4ea7d.jpg"
+            }
         },
         {
             "name": "Basset Hound",
             "breed_group": "Hound",
             "description": "The Basset Hound is a breed of dog that originated in France. They are known for their long ears and short legs, and are often used for hunting small game.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Basset_Hound_%28PSF%29.png/1200px-Basset_Hound_%28PSF%29.png"
-            },
-            "dog-shelter": "Dog nation"
+                "url": "https://i.pinimg.com/564x/a2/39/4b/a2394bbb50c0d728453b09765c0175fd.jpg"
+            }
         },
         {
             "name": "Beagle",
             "breed_group": "Hound",
             "description": "The Beagle is a breed of small hound that originated in England. They are known for their intelligence and loyalty.",
             "image": {
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Beagle_%28PSF%29.png/1200px-Beagle_%28PSF%29.png"
-            },
-            "dog-shelter": "Paws of love"
+                "url": "https://i.pinimg.com/736x/db/90/1e/db901e35bec50a62681eff05490087cd.jpg"
+            }
         }
     ]
 }
