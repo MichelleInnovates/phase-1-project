@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const breedName = breedSearch.value.toLowerCase();
 
     // Fetch the breeds data from the db.json file
-    fetch('src/db.json')
+    fetch('https://phase-1-project-json-server.onrender.com/breeds')
       .then(response => response.json())
       .then(data => {
         // Filter the breeds based on the search query
-        const matchingBreeds = data.breeds.filter(breed => breed.name.toLowerCase().includes(breedName));
+        const matchingBreeds = data.filter(breed => breed.name.toLowerCase().includes(breedName));
 
         // Display the matching breeds
         displayBreeds(matchingBreeds);
