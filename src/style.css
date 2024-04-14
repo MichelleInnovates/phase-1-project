@@ -77,3 +77,9 @@ footer {
   color: #777;
   margin-bottom: 1rem;
 }
+p {
+  font-size: 1.1rem;
+  font-style: unset;
+  color: #777;
+  margin-bottom: 1rem;
+}
