@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Create the breed group element
       const breedGroupElement = document.createElement('p');
       breedGroupElement.classList.add('card-text');
-      breedGroupElement.textContent = '${breed.breed_group}';
+      breedGroupElement.textContent = breed.breed_group;
 
       // Create the breed description element
       const breedDescriptionElement = document.createElement('p');
