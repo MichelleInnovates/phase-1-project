@@ -20,7 +20,7 @@ To set up the project, follow these steps:
 
 ## Live Link
 
-[Live Demo](#)
+https://michelleinnovates.github.io/phase-1-project/
 
 ## Contact
 
